@@ -4,8 +4,11 @@ import IconLogoHeader from "../Icon/IconLogoHeader";
 import { pathDefault } from "../../common/path";
 import { DownOutlined, SmileOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
+import img from "../../assets/img/bg_1.png";
 import "./header.scss";
 import LinkCustom from "../LinkCustom/LinkCustom";
+import FindTheRight from "../FindTheRight/FindTheRight";
+import Home from "../../pages/Home/Home";
 const items = [
   {
     key: "1",
@@ -93,6 +96,7 @@ const Header = () => {
             />
           </nav>
         </div>
+        <Home />
       </div>
     </header>
   );

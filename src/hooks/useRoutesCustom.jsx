@@ -4,6 +4,7 @@ import UserTemplate from "../templates/UserTemplate/UserTemplate";
 import { pathDefault } from "../common/path";
 import RegisterPage from "../pages/Register/RegisterPage";
 import LoginPage from "../pages/Login/LoginPage";
+import Home from "../pages/Home/Home";
 
 const useRoutesCustom = () => {
   const routes = useRoutes([
@@ -18,6 +19,10 @@ const useRoutesCustom = () => {
     {
       path: pathDefault.login,
       element: <LoginPage />,
+    },
+    {
+      path: pathDefault.home,
+      element: <Home />,
     },
   ]);
   return routes;
