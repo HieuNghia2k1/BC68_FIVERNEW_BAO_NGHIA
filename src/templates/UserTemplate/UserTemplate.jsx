@@ -4,6 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import { Outlet } from "react-router-dom";
 import FindTheRight from "../../components/FindTheRight/FindTheRight";
 import Home from "../../pages/Home/Home";
+import Popular from "../../components/Popular/Popular";
 // import Find_the_right from "../../components/Find_the_right";
 
 const UserTemplate = () => {
@@ -13,6 +14,7 @@ const UserTemplate = () => {
       <Header />
       <Home />
       <FindTheRight />
+      <Popular />
       <main>
         <Outlet />
       </main>

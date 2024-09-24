@@ -4,35 +4,10 @@ import bg_1 from "../../assets/img/bg_1.png";
 //
 const FindTheRight = () => {
   return (
-    <div className="container m-10 relative bg-no-repeat bg-[url('/public/bg_1.png')] text-white h-screen flex flex-col justify-center items-center">
-      {/* Floating Profile Images */}
-      {/* <div className="absolute top-10 left-10 transform -rotate-6">
-        <div className="bg-green-800 p-4 rounded-lg shadow-lg">
-          <img
-            className="w-24 h-24 rounded-lg"
-            src="https://via.placeholder.com/150"
-            alt="Jenny"
-          />
-          <h3 className="text-white mt-2">Jenny</h3>
-          <p className="text-gray-300">Voiceover & Singer</p>
-        </div>
-      </div>
-
-      <div className="absolute top-32 right-10 transform rotate-6">
-        <div className="bg-green-800 p-4 rounded-lg shadow-lg">
-          <img
-            className="w-24 h-24 rounded-lg"
-            src="https://via.placeholder.com/150"
-            alt="Jordan"
-          />
-          <h3 className="text-white mt-2">Jordan</h3>
-          <p className="text-gray-300">Production Assistant</p>
-        </div>
-      </div> */}
-
+    <div className=" container mx-24 relative bg-no-repeat bg-[url('/public/bg_1.png')] text-white h-screen flex flex-col justify-center items-center">
       {/* Hero Headline */}
-      <div className="text-center">
-        <h1 className="text-4xl md:text-6xl font-bold">
+      <div className=" mb-10 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold">
           Find the right <span className="text-green-400">freelance</span>{" "}
           <br />
           service, right away
@@ -40,7 +15,7 @@ const FindTheRight = () => {
       </div>
 
       {/* Search Bar */}
-      <div className="mt-8 w-full max-w-md">
+      <div className=" w-full max-w-md">
         <div className="relative flex items-center">
           <input
             type="text"
@@ -51,37 +26,37 @@ const FindTheRight = () => {
             🔍
           </button>
         </div>
-      </div>
-
-      {/* Trusted by Brands */}
-      <div className="mt-10 text-gray-400">
-        <p>Trusted by:</p>
-        <div className="flex space-x-4 mt-2">
-          <img
-            className="w-20"
-            src="https://via.placeholder.com/50"
-            alt="Meta"
-          />
-          <img
-            className="w-20"
-            src="https://via.placeholder.com/50"
-            alt="Google"
-          />
-          <img
-            className="w-20"
-            src="https://via.placeholder.com/50"
-            alt="Netflix"
-          />
-          <img
-            className="w-20"
-            src="https://via.placeholder.com/50"
-            alt="PayPal"
-          />
+        <div className=" mb-28  text-gray-400 mt-2">
+          <p>Trusted by:</p>
+          <div className="flex space-x-4 mt-3">
+            <img
+              className="w-20"
+              src="https://via.placeholder.com/50"
+              alt="Meta"
+            />
+            <img
+              className="w-20"
+              src="https://via.placeholder.com/50"
+              alt="Google"
+            />
+            <img
+              className="w-20"
+              src="https://via.placeholder.com/50"
+              alt="Netflix"
+            />
+            <img
+              className="w-20"
+              src="https://via.placeholder.com/50"
+              alt="PayPal"
+            />
+          </div>
         </div>
       </div>
 
+      {/* Trusted by Brands */}
+
       {/* Categories Section */}
-      <div className="mt-8 w-full max-w-4xl grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div className=" flex flex-row  max-w-6xl sm:grid-cols-4 gap-4">
         {[
           "Programming & Tech",
           "Graphics & Design",
@@ -95,7 +70,7 @@ const FindTheRight = () => {
         ].map((category) => (
           <div
             key={category}
-            className="p-4 bg-white text-gray-800 rounded-lg shadow-md"
+            className="p-2 bg-white text-gray-800 rounded-lg shadow-md"
           >
             <p>{category}</p>
           </div>
